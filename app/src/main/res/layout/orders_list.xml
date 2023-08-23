@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="310dp"
+        android:background="@drawable/gradient_drawable3">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/golden_pepper"
+            android:text="Order ID"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/orderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nr_tickets"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="TotalPrice"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/nr_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderedAt"
+            android:layout_marginTop="15dp"
+            android:text="NumberOfTickets"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/orderedAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Ordered At"
+            android:textSize="18dp"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinnerTicketCategory2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderPrice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/editTextTickets2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerTicketCategory2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:hint="Edit nr. of tickets"
+            android:inputType="number"
+            android:textColorHint="?android:textColorPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/editTextTickets2"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="230dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Delete"
+            android:src="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/editTextTickets2"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="0dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Save"
+            android:src="@drawable/save" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
